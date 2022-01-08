@@ -12,7 +12,7 @@ See the above repository for updates as well as full license text.
 
 :root[titlepreface*="Sidebery"][tabsintitlebar] {
     /* Space reserved for window controls */
-    --uc-window-control-width: 138px;
+    --uc-window-control-width: 84px;
 
     /* Extra space reserved on both sides of the nav-bar to be able to drag the window */
     --uc-window-drag-space-pre: 30px;  /* left side */
@@ -39,5 +39,6 @@ See the above repository for updates as well as full license text.
 /* Reduce width of address bar so icons don't overlap with window control */
 :root[titlepreface*="Sidebery"] #nav-bar {
     border-inline: var(--uc-window-drag-space-pre, 0px) solid var(--toolbar-bgcolor);
+    border-inline-style: solid !important;
     border-right-width: calc(var(--uc-window-control-width, 0px) + var(--uc-window-drag-space-post, 0px));
 }
